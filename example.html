@@ -1,0 +1,49 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>TO DO List</title>
+    
+	</head>
+	<body>
+		<div class="heading">
+			<h2>To Do List</h2>
+			<input id="name" type="text" autocomplete="name" placeholder="type here to addToList"/>
+			<span><button onclick="addToList()">Add</button></span>
+		</div>
+		<div id="list">
+			<ol  id="ol">
+			</ol>
+		</div>
+	<script src="example.js"></script>
+		<style type="text/css">
+			.checkbtn{
+				width: 20px; /*Desired width*/
+		  height: 20px;
+		  vertical-align: middle;
+			}
+			.button{
+				margin-left: 10px;
+			}
+			li{
+				margin: 10px
+			}
+			.heading{
+				text-align:  center;
+				color: green;
+			}
+			#list{
+				list-style-position: inside;
+				text-align: center;
+			}
+			ol li:nth-child(odd) {
+			  background: #f9f9f9;
+			}
+			li button{
+				color: black;
+				background: #ed7474;
+				margin: 10px;	
+			}
+
+		</style>
+	</body>
+	</html>
